@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Upload</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+<body>
+{% for key, value in result.items()%}
+folder name :{{key}}<br>
+{%for file in value %}
+file name: {{file[0]}}<br>
+size : {{file[1]}}<br><br><br>
+{%endfor%}
+{%endfor%}
+<br>
+<form action="download" method="post" enctype="multipart/form-data">
+Enter file name: <input type="text" name="f">
+<input type= "submit"  value="submit">
+</form>
+</body>
+</html>

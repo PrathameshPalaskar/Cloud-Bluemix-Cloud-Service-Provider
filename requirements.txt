@@ -1,0 +1,4 @@
+flask
+python-swiftclient
+python-keystoneclient
+pydes
